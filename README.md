@@ -1,4 +1,4 @@
-# static docker nginx container
+# static nginx alpine container
 
 This example is using `docker-compose.override.yml` to define development-specific configuration for Docker. 
 
