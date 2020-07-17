@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    nginx:
+        container_name: static-container
+        image: nonom/static-container
+        restart: always
+        ports:
+            - 80:80
+

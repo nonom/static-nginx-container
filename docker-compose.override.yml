@@ -1,0 +1,13 @@
+version: '2'
+
+# Since we're only building the container in a development environment, 
+# the build configuration for the static container only needs to be 
+# available on this folder
+
+services:
+    nginx:
+        build:
+            context: ./
+            dockerfile: docker/Dockerfile
+        volumes:
+            - ./output:/usr/share/nginx/html
