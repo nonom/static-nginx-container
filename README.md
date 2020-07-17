@@ -1,5 +1,7 @@
 # static nginx alpine container
 
+`FROM nginx:1.19.1-alpine`
+
 This example is using `docker-compose.override.yml` to define development-specific configuration for Docker. 
 
 Since we're only building the container in a development environment, the build configuration for the static container only needs to be in available in `docker-compose.override.yml`.
